@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="159" id="KGk-i7-Jjw" customClass="CdCustomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKQ-OB-bAX">
+                        <rect key="frame" x="14" y="18" width="291" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Wog-qd-Vbx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discipline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPd-eM-u1t">
+                        <rect key="frame" x="14" y="43" width="291" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="sdx-xp-xnQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-nb-hlo">
+                        <rect key="frame" x="14" y="68" width="291" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAP-Gz-7YH">
+                        <rect key="frame" x="14" y="93" width="291" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9Om-P9-sZR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9b-GA-OZi">
+                        <rect key="frame" x="14" y="118" width="291" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WPd-eM-u1t" firstAttribute="top" secondItem="PKQ-OB-bAX" secondAttribute="bottom" constant="4" id="10j-BA-r1I"/>
+                    <constraint firstItem="HAd-nb-hlo" firstAttribute="leading" secondItem="SAP-Gz-7YH" secondAttribute="leading" id="6Yd-rw-xPz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PKQ-OB-bAX" secondAttribute="trailing" constant="79" id="8BF-dK-pI2"/>
+                    <constraint firstItem="SAP-Gz-7YH" firstAttribute="top" secondItem="HAd-nb-hlo" secondAttribute="bottom" constant="4" id="8Yj-cB-aOx"/>
+                    <constraint firstItem="W9b-GA-OZi" firstAttribute="top" secondItem="SAP-Gz-7YH" secondAttribute="bottom" constant="4" id="Cft-rm-gzV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W9b-GA-OZi" secondAttribute="bottom" constant="11.5" id="HRC-gu-HnD"/>
+                    <constraint firstItem="PKQ-OB-bAX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="HkJ-vT-ev7"/>
+                    <constraint firstItem="SAP-Gz-7YH" firstAttribute="leading" secondItem="W9b-GA-OZi" secondAttribute="leading" id="JPI-VP-gPh"/>
+                    <constraint firstItem="PKQ-OB-bAX" firstAttribute="trailing" secondItem="WPd-eM-u1t" secondAttribute="trailing" id="KV2-yJ-t7h"/>
+                    <constraint firstItem="HAd-nb-hlo" firstAttribute="top" secondItem="WPd-eM-u1t" secondAttribute="bottom" constant="4" id="SQI-fc-msL"/>
+                    <constraint firstItem="WPd-eM-u1t" firstAttribute="trailing" secondItem="HAd-nb-hlo" secondAttribute="trailing" id="WKZ-15-dex"/>
+                    <constraint firstItem="PKQ-OB-bAX" firstAttribute="leading" secondItem="WPd-eM-u1t" secondAttribute="leading" id="be7-Hh-Dlp"/>
+                    <constraint firstItem="W9b-GA-OZi" firstAttribute="trailing" secondItem="SAP-Gz-7YH" secondAttribute="trailing" id="ckJ-s5-nzq"/>
+                    <constraint firstItem="WPd-eM-u1t" firstAttribute="leading" secondItem="HAd-nb-hlo" secondAttribute="leading" id="gNe-cb-unf"/>
+                    <constraint firstItem="HAd-nb-hlo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i46-cg-x6l"/>
+                    <constraint firstItem="PKQ-OB-bAX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="jHn-9y-vN3"/>
+                    <constraint firstItem="SAP-Gz-7YH" firstAttribute="trailing" secondItem="HAd-nb-hlo" secondAttribute="trailing" id="my3-lW-OpC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="discipline" destination="WPd-eM-u1t" id="1xT-HF-o94"/>
+                <outlet property="latitude" destination="SAP-Gz-7YH" id="Cn2-LG-yzD"/>
+                <outlet property="locationName" destination="PKQ-OB-bAX" id="IpY-ZZ-JJJ"/>
+                <outlet property="longitude" destination="W9b-GA-OZi" id="1nZ-pk-JIO"/>
+                <outlet property="titleOfThing" destination="HAd-nb-hlo" id="P6c-K5-M2q"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="359.5"/>
+        </tableViewCell>
+    </objects>
+</document>
